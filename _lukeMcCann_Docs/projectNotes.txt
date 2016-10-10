@@ -1,0 +1,16 @@
+Team Project Notes: 
+
+03/10/2016
+
+Assignments: 
+    1. Refresh knowledge of HTML/CSS/PHP *
+    2. Continue Work on LiveChat Widget using PHP and JQuery *
+    3. Product Limitations - Report 
+    4. Skills Audit. *
+    5. Survey *
+
+10/10/2016
+    
+Assignments:
+    1. Finish Product Limitations
+    2. Learn enough PHP to create liveChat
