@@ -1,0 +1,15 @@
+body {
+	
+}
+
+#logo {
+	margin-left: 180px;
+}
+
+.navbar-right > li + li:before {
+	content: " | "
+}
+
+.navbar-right > li {
+	padding: -5px;
+}
