@@ -1,0 +1,68 @@
+
+public class SubstringSearch {
+	
+	private String text;
+	private char pattern;
+	
+	public static void main(String args[])
+	{
+		
+	}
+	
+	public boolean matchPattern(char[] text, char[] pattern)
+	{
+		int lps[] = computeTempArr(pattern);
+		int i = 0;
+		int j = 0;
+		while(i < text.length && j < pattern.length)
+		{
+			if(text[i] == pattern[j])
+			{
+				i++;
+				j++;
+			} else
+			{
+				if(j != 0)
+				{
+					j = lps[j--];
+				} else
+				{
+					i++;
+				}
+			}
+		}
+		if(j == pattern.length)
+		{
+			return true;
+		}
+		return false;
+		
+	}
+	
+	private int[] computeTempArr(char pattern[]) 
+	{
+		int[] lps = new int[pattern.length];
+		int index = 0;
+		for(int i = 1; i < pattern.length;)
+		{
+			if(pattern[i] == pattern[index])
+			{
+				lps[i] = index++;
+				index++;
+				i++;
+			} else
+			{
+				if(index != 0)
+				{
+					index = lps[index--];
+				} else
+				{
+					lps[i] = 0;
+					i++;
+				}
+			}
+		}
+		return lps;
+	}
+
+}
