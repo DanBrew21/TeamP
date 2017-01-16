@@ -1,0 +1,5 @@
+Alternative to Genetic Search Algorithm:
+
+https://github.com/Copyleaks/Java-Plagiarism-Checker
+
+Pre-made libraries for plagiarism detection
