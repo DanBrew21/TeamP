@@ -1,66 +1,78 @@
 <!Doctype html>
 <html lang=en-gb>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="Description" content="Student help site" />
-<meta name="Author" content="Team407">
-<meta name="HandheldFriendly" content="true" />
-<meta name="Keywords" content="enter searchable words here">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="Description" content="Student help site" />
+	<meta name="Author" content="Team407">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="Keywords" content="enter searchable words here">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
-		    
-<!-- Latest compiled and minified JQuery libraries -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 
-<!--Personal CSS stylesheet-->
-<link rel="stylesheet" type="text/css" href="style/main.css">
+	<!-- Latest compiled and minified JQuery libraries -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-<title>ScrapBook</title>
+	<!--Personal CSS stylesheet-->
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+
+	<title>ScrapBook</title>
 </head>
 <body>
-<nav class="navbar navbar-default" >
-	<div class="container-fluid" >
-		<div class="navbar-header">
-			<a class="narbar-brand" href="#">
-			    <img id="logo" alt="University network" src="...">
-			</a>
+	<nav class="navbar navbar-default" >
+		<div class="container-fluid" >
+			<div class="navbar-header">
+				<a class="narbar-brand" href="#">
+					<img id="logo" alt="University network" src="...">
+				</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<button type="button" class="btn btn-link">Sign Up
+					</button>
+				</li>
+				<li>
+					<button type="button" class="btn btn-link">Login
+					</button>
+				</li>						
+			</ul>
+			<ul class="nav navbar-nav navbar-right navMain">
+				<li>
+					<button type="button" class="btn btn-home btn-link">HOME
+					</button>
+				</li>
+			</ul>
 		</div>
-		    <ul class="nav navbar-nav navbar-right">
-		        <li>
-			        <button type="button" class="btn btn-link">Sign Up
-			        </button>
-			    </li>
-			    <li>
-			        <button type="button" class="btn btn-link">Login
-			        </button>
-			    </li>						
-		    </ul>
-		    <ul class="nav navbar-nav navbar-right navMain">
-		    	<li>
-		    		<button type="button" class="btn btn-home btn-link">HOME
-		    		</button>
-		    		<button type="button" class="btn btn-course btn-link">COURSES
-		    		</button>
-		    		<span class="glyphicon glyphicon-tirangle-bottom">
-		    		</span>
-		    	</li>
-		    </ul>
-	    </div>
 	</nav> <!-- end of navbar -->
-<div class="jumbotron">
-	<div class="container">
-		<div class="main">
-			<h2>FIND <span class="greenText">YOUR</span> ANSWERS</h2>
-		</div>
-	</div>
-</div>
+	<div class="jumbotron">
+		<div class="container">
+			<div class="main">
+				<h2>FIND <span class="greenText">YOUR</span> ANSWERS</h2>
+				<div class="input-group col-md-12">
+					<input type="text" class="  search-query form-control" placeholder="Search" />
+					<span class="input-group-btn">
+						<button class="btn btn-success" type="button">
+							<span class=" glyphicon glyphicon-search">
+							</span>
+						</button>
+					</span>
+				</div>
+			</div>
+	    </div><!--End of Jumbotron-->
+	    <div class="Jumbotron">
+	        <div class="container-fluid">
+	            <div class="main">
+	            </div>
+	            <div class="secondary">
+	            </div>
+	        </div>
+	    </div>
 </body>
 </html>
